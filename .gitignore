@@ -1,0 +1,26 @@
+# Local/editor files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.tmp
+
+# Credentials and runtime data
+.env
+.env.*
+*.pem
+*.key
+*token*
+*secret*
+credentials/
+logs/
+state/
+sessions/
+
+# Release binaries belong in GitHub Releases, not git history
+releases/
+downloads/
+*.zip
+*.tar
+*.tar.gz
+*.7z
