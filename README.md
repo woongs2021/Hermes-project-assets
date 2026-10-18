@@ -67,6 +67,7 @@ Every connected webapp manifest item uses:
 | Release | Contents | Status |
 | --- | --- | --- |
 | [`design-dna-2026-10`](https://github.com/woongs2021/Hermes-project-assets/releases/tag/design-dna-2026-10) | 84 Design DNA 4K/HQ originals | active public download source |
+| [`midjourney-dna-archive-2026-10`](https://github.com/woongs2021/Hermes-project-assets/releases/tag/midjourney-dna-archive-2026-10) | 35 Midjourney DNA Archive 4K originals (949,598,285 bytes) | active public download source |
 
 ## Adding a new resource
 
