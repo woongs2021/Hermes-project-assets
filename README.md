@@ -53,13 +53,21 @@ Every connected webapp manifest item uses:
 - generated a manifest-derived inventory containing source-relative path, file size, SHA-256, deterministic Release filename, and connected webapp references
 - checked all Release assets against source byte sizes and verified each generated download URL before the webapp manifest was switched
 
-### Phase 3 — Webapp integration and cleanup
+### Phase 3 — Package/mockup externalization
+
+**Implemented — `design-dna-2026-11`**
+
+- created public GitHub Release [`design-dna-2026-11`](https://github.com/woongs2021/Hermes-project-assets/releases/tag/design-dna-2026-11)
+- uploaded **196** Design DNA mockup originals (**1,002,025,248 bytes** total)
+- retained lightweight local WebP previews for all 60 manifest-rendered package mockup items and moved their original downloads to the versioned Release
+- all 196 uploaded assets were checked against local filenames and byte sizes before their Pages copies were removed
+
+### Phase 4 — Webapp integration and cleanup
 
 **Implemented**
 
 - the corresponding webapp manifest now shows local WebP previews and uses these Release URLs for original downloads
-- all 84 connected preview/download pairs were verified during migration
-- tracked high-resolution copies have been removed from the current `Hermes-project-webapp` tree only after Release and Pages verification
+- tracked high-resolution copies have been removed from the current `Hermes-project-webapp` tree only after Release and local-build verification
 - historical git objects are intentionally retained; history rewrite/force push is not part of normal asset delivery
 
 ## Current releases
@@ -68,6 +76,7 @@ Every connected webapp manifest item uses:
 | --- | --- | --- |
 | [`design-dna-2026-10`](https://github.com/woongs2021/Hermes-project-assets/releases/tag/design-dna-2026-10) | 84 Design DNA 4K/HQ originals | active public download source |
 | [`midjourney-dna-archive-2026-10`](https://github.com/woongs2021/Hermes-project-assets/releases/tag/midjourney-dna-archive-2026-10) | 35 Midjourney DNA Archive 4K originals (949,598,285 bytes) | active public download source |
+| [`design-dna-2026-11`](https://github.com/woongs2021/Hermes-project-assets/releases/tag/design-dna-2026-11) | 196 Design DNA mockup originals (1,002,025,248 bytes) | active public download source |
 
 ## Adding a new resource
 
