@@ -1,0 +1,30 @@
+{
+  "releaseTag": "design-dna-2026-11",
+  "description": "Chris-selected Go Youn-jung Design DNA originals. Webapp display uses 640px WebP previews; these 1024px PNGs are the downloadable originals.",
+  "assets": [
+    {
+      "title": "Fresco Horizon Wash",
+      "releaseAssetName": "goyj-dna-2026-11-11__01_fresco_horizon_wash__1024.png",
+      "bytes": 1841993,
+      "sha256": "6cb2f6a7deb1efd098c5d4cea04abdfe3e6b8a39fa49337c498265adcff4fa09"
+    },
+    {
+      "title": "Graphite Moiré Veil",
+      "releaseAssetName": "goyj-dna-2026-11-11__03_graphite_moire_veil__1024.png",
+      "bytes": 1864456,
+      "sha256": "e47710531d116c5c0ede44549590c8d7cad4ed3624b7ab8c5a166c04353ef27d"
+    },
+    {
+      "title": "Bitmap Tidal Repeat",
+      "releaseAssetName": "goyj-dna-2026-11-11__04_bitmap_tidal_repeat__1024.png",
+      "bytes": 2028175,
+      "sha256": "2304832c0914cb7828f0696e391b2d031bd2f958882b0f18c51ea811df2d2092"
+    },
+    {
+      "title": "Bloom Void Accent",
+      "releaseAssetName": "goyj-dna-2026-11-11__05_bloom_void_accent__1024.png",
+      "bytes": 1520455,
+      "sha256": "67c57f82272f8e88f1d4c6dd8c51fc4aa7f24263e0f1637003367edd0170076c"
+    }
+  ]
+}
