@@ -34,6 +34,10 @@ Every connected webapp manifest item uses:
 - `downloadSrc` for a versioned Release URL in this repository
 - `sourceAssetStore`, `sourceAssetRelease`, and `assetTier` for provenance when supported
 
+## Reusable Midjourney library
+
+The public [midjourney/](midjourney/) folder is the single reusable catalog for Midjourney resources across Releases. It contains link-only metadata and an updater, not duplicated binaries. See [midjourney/README.md](midjourney/README.md) for the update rule and [midjourney/catalog.json](midjourney/catalog.json) for canonical direct-download URLs.
+
 ## Delivery phases and implemented state
 
 ### Phase 1 — Repository foundation
