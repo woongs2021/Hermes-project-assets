@@ -36,7 +36,7 @@ Every connected webapp manifest item uses:
 
 ## Reusable Midjourney library
 
-The public [midjourney/](midjourney/) folder is the single reusable catalog for Midjourney resources across Releases. It contains link-only metadata and an updater, not duplicated binaries. See [midjourney/README.md](midjourney/README.md) for the update rule and [midjourney/catalog.json](midjourney/catalog.json) for canonical direct-download URLs.
+The public [midjourney/](midjourney/) folder is the single reusable catalog for the **64 resources actually rendered in Design DNA → DNA Dashboard → Midjourney**. It contains link-only metadata and an updater, not duplicated binaries. See [midjourney/README.md](midjourney/README.md) for the exact scope and update rule, and [midjourney/catalog.json](midjourney/catalog.json) for canonical resource URLs.
 
 ## Delivery phases and implemented state
 

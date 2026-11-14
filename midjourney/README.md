@@ -1,38 +1,38 @@
-# Midjourney asset library
+# DNA Dashboard — Midjourney resource library
 
-This folder is the single reusable entry point for every public Midjourney resource held in [`Hermes-project-assets`](https://github.com/woongs2021/Hermes-project-assets).
+This folder is the **only reusable library for the resources actually displayed in**:
 
-## What this folder is
+**Hermes webapp → Corporate AX → Design DNA → DNA Dashboard → Midjourney**
 
-GitHub Release assets cannot be placed in folders and should not be copied into Git history. `catalog.json` provides the folder-like library view instead:
+It intentionally excludes unrelated Midjourney mockups, packaging experiments, and other Release assets.
 
-- one record per canonical public original
-- stable filename, category, Release tag, byte size, timestamp, and direct download URL
-- all originals remain in their existing versioned GitHub Releases, so current webapp download links stay valid
-- no binary is duplicated in this repository
+## Scope
 
-The catalog currently includes an asset when either:
+`catalog.json` is generated from the live [Midjourney DNA Dashboard manifest](https://woongs2021.github.io/Hermes-project-webapp/data/midjourney-dna-archive.json). It contains exactly the Dashboard’s published Midjourney items, in their visible numeric order.
 
-1. its Release tag starts with `midjourney-dna-`, or
-2. its filename contains `midjourney`.
+Each item includes:
 
-That includes the DNA archive originals and Midjourney-derived mockup/package resources. It does not include unrelated GoYJ/GPT assets.
+- stable Dashboard ID and visible sequence
+- title, creation date, dimensions, and SHA-256 asset hash when supplied by the Dashboard
+- `previewUrl`: the public Dashboard resource
+- `downloadUrl`: its canonical GitHub Release original when one exists
+
+Some Dashboard resources have only a public webapp preview today; their `downloadUrl` is `null`. The catalog makes that distinction explicit instead of implying they are 4K originals.
 
 ## Reuse
 
-Use `catalog.json` as the lookup source. Each item has a public `downloadUrl`, which is the canonical original. Keep project-specific lightweight previews in the consuming project; do not copy a high-resolution original into the webapp repository.
+For another project, use `downloadUrl` when it exists. Otherwise use `previewUrl` and treat it as the published web-size resource. Do not pull unrelated assets from the broader Release history.
 
-## Future update rule
+## Update rule
 
-**This `midjourney/` folder is the only Git folder to update for the reusable Midjourney library.**
+**Update only this `midjourney/` folder when the DNA Dashboard collection changes.**
 
-1. Upload a public-safe original to its appropriate dated GitHub Release.
-2. Verify the Release asset’s direct URL returns the expected bytes.
-3. From the repository root, run:
-   ```bash
-   python3 midjourney/refresh_catalog.py
-   ```
-4. Inspect the generated diff and commit only `midjourney/catalog.json` and, if the rules change, `midjourney/README.md` or `midjourney/refresh_catalog.py`.
-5. For a consuming webapp, point `downloadSrc` to the catalog entry’s `downloadUrl`; preserve a lightweight local preview.
+After the webapp change is deployed, run:
 
-Do not download all Releases to rebuild this library, and do not delete or rename existing Release assets: their direct URLs can already be referenced by live projects.
+```bash
+python3 midjourney/refresh_catalog.py --verify-urls
+```
+
+This refreshes `catalog.json` from the live Dashboard manifest and checks every listed preview is a live image. Commit only the changed files within `midjourney/` (plus this root README only if the repository-level architecture changes).
+
+The script does not download or duplicate high-resolution Release binaries. Existing Release URLs remain stable and existing consuming projects are not affected.
