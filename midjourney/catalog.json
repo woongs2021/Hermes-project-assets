@@ -2,11 +2,11 @@
   "schemaVersion": 2,
   "collection": "Design DNA → DNA Dashboard → Midjourney",
   "webappManifestUrl": "https://woongs2021.github.io/Hermes-project-webapp/data/midjourney-dna-archive.json",
-  "generatedAt": "2026-11-14T05:15:20Z",
+  "generatedAt": "2026-11-14T06:56:43Z",
   "totals": {
     "resources": 64,
-    "releaseOriginals": 43,
-    "previewOnly": 21
+    "releaseOriginals": 44,
+    "previewOnly": 20
   },
   "items": [
     {
@@ -135,7 +135,7 @@
       "title": "Midjourney 11 — Ambient Blue-Peach Gradient Surface Translation",
       "created": "2026-09-26",
       "previewUrl": "https://woongs2021.github.io/Hermes-project-webapp/assets/dna-archive/midjourney/2026-11-14/11_ambient_blue_peach_gradient_surface_still_v2.jpg",
-      "downloadUrl": null,
+      "downloadUrl": "https://github.com/woongs2021/Hermes-project-assets/releases/download/midjourney11-current-mockups-2026-11-14/midjourney-11-current-still_v2-4k.png",
       "width": 1280,
       "height": 1280,
       "assetHash": "7ec6e1ef8d32bad8cd84d5509493aba183d5862681cbf7b0cc28ef9cbbffa209",
